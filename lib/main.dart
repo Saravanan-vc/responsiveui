@@ -4,7 +4,8 @@ import 'package:pizaapp/coer/images_coer/colors.dart';
 // import 'package:pizaapp/mobile_application/authentication_area/splas_screen.dart';
 // import 'package:pizaapp/web_application/authentication_area/splas_sreen_web.dart';
 // import 'package:pizaapp/web_scree_youtube.dart';
-import 'package:pizaapp/web_screen_piza.dart';
+// import 'package:pizaapp/web_screen_piza.dart';
+import 'package:pizaapp/web_screen_white.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,11 +21,12 @@ class MyApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (_, child) {
         return MaterialApp(
+            debugShowCheckedModeBanner: false,
             themeMode: ThemeMode.system,
             theme: ThemeData.dark().copyWith(
-              scaffoldBackgroundColor: Pallete.backgroundColor,
+              scaffoldBackgroundColor: Pallete.whiteColor,
             ),
-            home: const WebScreenPiza());
+            home: const WebScreenWhite());
       },
     );
   }
